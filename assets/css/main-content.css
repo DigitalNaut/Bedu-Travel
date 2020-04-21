@@ -1,0 +1,95 @@
+.content {
+    width: inherit;
+    background-color: #8888;
+    margin: 0px;
+    word-break: break-word;
+    color: white;
+}
+
+.content .title {
+    font-size: 2.5em;
+    font-weight: 700;
+
+    text-transform: uppercase;
+
+    padding: 0.5em;
+}
+
+@media only screen and (max-width: 768px) {
+    .content .title {
+        font-size: 2em;
+    }
+
+    .content .description {
+        font-size: 1.25em;
+    }    
+}
+
+@media only screen and (max-width: 425px) {
+    .content .title {
+        font-size: 1.5em;
+    }
+
+    .content .description {
+        font-size: 0.8em;
+    }    
+}
+
+.content .description {
+    padding: 0.5em;
+
+    font-size: 1.5em;
+    font-weight: 300;
+    font-style: italic;
+    font-family: 'Roboto', sans-serif;
+}
+
+.searchbar {
+    background-color: white;
+    width: min(500px, 80%);
+    height: 48px;
+    border-radius: 5px;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    box-shadow: -1px 7px 14px #11111199;
+}
+
+.searchbar input {
+    flex-grow: 1;
+    border: none;
+    margin-left: 10px;
+}
+
+.searchbar button {
+    margin: 8px;
+    width: 32px;
+    height: 32px;
+
+    display: flex;
+    justify-content: center;
+
+    color: #fff;
+    background-color: #11111199;
+    text-decoration: none;
+}
+
+.content .container {
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    text-shadow: 1px 1px 4px #111111;
+
+    background-image: url("../images/img_cover_home.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;;
+    height: 80vh;
+}
