@@ -1,6 +1,9 @@
+$backgroundColor: #888;
+$shadowColor: #11111199;
+
 .content {
     width: inherit;
-    background-color: #8888;
+    background-color: $backgroundColor;
     margin: 0px;
     word-break: break-word;
     color: white;
@@ -55,7 +58,7 @@
     justify-content: space-between;
     align-items: center;
 
-    box-shadow: -1px 7px 14px #11111199;
+    box-shadow: -1px 7px 14px $shadowColor;
 }
 
 .searchbar input {
@@ -72,8 +75,8 @@
     display: flex;
     justify-content: center;
 
-    color: #fff;
-    background-color: #11111199;
+    color: white;
+    background-color: $shadowColor;
     text-decoration: none;
 }
 
@@ -85,11 +88,11 @@
     justify-content: center;
     text-align: center;
 
-    text-shadow: 1px 1px 4px #111111;
+    text-shadow: 1px 1px 4px $shadowColor;
 
     background-image: url("../images/img_cover_home.jpg");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;;
+    background-size: cover;
     height: 80vh;
 }
